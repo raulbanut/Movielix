@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		24DD6C91291D278800A796D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6C90291D278800A796D1 /* AppDelegate.swift */; };
 		24DD6C93291D278800A796D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6C92291D278800A796D1 /* SceneDelegate.swift */; };
-		24DD6C95291D278800A796D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6C94291D278800A796D1 /* ViewController.swift */; };
+		24DD6C95291D278800A796D1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6C94291D278800A796D1 /* MainTabBarViewController.swift */; };
 		24DD6C9A291D278900A796D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DD6C99291D278900A796D1 /* Assets.xcassets */; };
 		24DD6C9D291D278900A796D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DD6C9B291D278900A796D1 /* LaunchScreen.storyboard */; };
+		24DD6CA6291D2A5400A796D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CA5291D2A5400A796D1 /* HomeViewController.swift */; };
+		24DD6CA8291D2A8A00A796D1 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CA7291D2A8A00A796D1 /* UpcomingViewController.swift */; };
+		24DD6CAA291D2AA000A796D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CA9291D2AA000A796D1 /* SearchViewController.swift */; };
+		24DD6CAC291D2AB900A796D1 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CAB291D2AB900A796D1 /* DownloadsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24DD6C8D291D278800A796D1 /* Movielix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movielix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DD6C90291D278800A796D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DD6C92291D278800A796D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24DD6C94291D278800A796D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24DD6C94291D278800A796D1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		24DD6C99291D278900A796D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24DD6C9C291D278900A796D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24DD6C9E291D278900A796D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24DD6CA5291D2A5400A796D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		24DD6CA7291D2A8A00A796D1 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		24DD6CA9291D2AA000A796D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		24DD6CAB291D2AB900A796D1 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		24DD6C8F291D278800A796D1 /* Movielix */ = {
 			isa = PBXGroup;
 			children = (
+				24DD6CA4291D2A2D00A796D1 /* Controllers */,
 				24DD6C90291D278800A796D1 /* AppDelegate.swift */,
 				24DD6C92291D278800A796D1 /* SceneDelegate.swift */,
-				24DD6C94291D278800A796D1 /* ViewController.swift */,
+				24DD6C94291D278800A796D1 /* MainTabBarViewController.swift */,
 				24DD6C99291D278900A796D1 /* Assets.xcassets */,
 				24DD6C9B291D278900A796D1 /* LaunchScreen.storyboard */,
 				24DD6C9E291D278900A796D1 /* Info.plist */,
 			);
 			path = Movielix;
+			sourceTree = "<group>";
+		};
+		24DD6CA4291D2A2D00A796D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24DD6CA5291D2A5400A796D1 /* HomeViewController.swift */,
+				24DD6CA7291D2A8A00A796D1 /* UpcomingViewController.swift */,
+				24DD6CA9291D2AA000A796D1 /* SearchViewController.swift */,
+				24DD6CAB291D2AB900A796D1 /* DownloadsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DD6C95291D278800A796D1 /* ViewController.swift in Sources */,
+				24DD6CAA291D2AA000A796D1 /* SearchViewController.swift in Sources */,
+				24DD6C95291D278800A796D1 /* MainTabBarViewController.swift in Sources */,
+				24DD6CAC291D2AB900A796D1 /* DownloadsViewController.swift in Sources */,
 				24DD6C91291D278800A796D1 /* AppDelegate.swift in Sources */,
 				24DD6C93291D278800A796D1 /* SceneDelegate.swift in Sources */,
+				24DD6CA8291D2A8A00A796D1 /* UpcomingViewController.swift in Sources */,
+				24DD6CA6291D2A5400A796D1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
